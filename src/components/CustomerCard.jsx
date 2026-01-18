@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { MessageCircle, MapPin, Phone, User } from 'lucide-react';
 
 const CustomerCard = ({ customer, index, messageTemplate }) => {
@@ -71,10 +70,7 @@ const CustomerCard = ({ customer, index, messageTemplate }) => {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.05, duration: 0.3 }}
+    <div
       className="glass-card"
     >
       <div className="card-header">
@@ -114,7 +110,7 @@ const CustomerCard = ({ customer, index, messageTemplate }) => {
         <MessageCircle size={20} />
         <span>Send in WhatsApp</span>
       </button>
-    </motion.div>
+    </div>
   );
 };
 
