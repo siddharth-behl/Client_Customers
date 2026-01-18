@@ -1,0 +1,16 @@
+{
+    "rewrites": [
+        {
+            "source": "/api",
+            "destination": "https://customersdata.siddharth-websites.workers.dev/"
+        },
+        {
+            "source": "/api/(.*)",
+            "destination": "https://customersdata.siddharth-websites.workers.dev/$1"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}
